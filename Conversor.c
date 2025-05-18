@@ -1,5 +1,5 @@
 #include <stdio.h>
-void idade(){
+void calc_idade(){
     int idade, meses, dias;
     float semanas, horas;
     
@@ -7,13 +7,14 @@ void idade(){
     scanf("%d", &idade);
     
     meses = idade * 12;
-    semanas = meses * 4.345;
-    dias = semanas * 7;
+    dias = idade * 365;
+    semanas = dias / 7;
     horas = dias * 24;
     
     printf("voce tem %d meses, %.2f semanas e %.2d dias, %.2f horas", meses, semanas, dias, horas);
 }
 int main()
 {
-    idade();
+    calc_idade();
+    return 0;
 }
