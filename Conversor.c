@@ -1,12 +1,12 @@
 #include <stdio.h>
 void idade(){
-    int anos, meses, dias;
+    int idade, meses, dias;
     float semanas, horas;
     
     printf("Digite sua idade\n");
-    scanf("%d", &anos);
+    scanf("%d", &idade);
     
-    meses = anos * 12;
+    meses = idade * 12;
     semanas = meses * 4.345;
     dias = semanas * 7;
     horas = dias * 24;
